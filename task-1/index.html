@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous"/>
+        <link rel="stylesheet" href="main.css">
+
+        <title>task-1</title>
+    </head>
+    <body>
+        <div class="filters">
+            <div class="ui-group">
+                <h3>Type</h3>
+                <div class="filter-button-group" role="group" data-filter-group="type" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary is-checked" data-filter="">Show all</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".future">Concept car</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".present">Present</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".old">Old cars</button>
+                </div>
+            </div>
+            <div class="ui-group">
+                <h3>Color</h3>
+                <div class="filter-button-group" role="group" data-filter-group="color" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary is-checked" data-filter="">Show all</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".white">White</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".black">Black</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".gray">Gray</button>
+                    <button type="button" class="btn btn-secondary" data-filter=".other">Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="grid-item future white " data-category="future white">
+                <img src="img/future-1.jpg" alt="concept car 1">
+            </div>
+            <div class="grid-item present white" data-category="present white">
+                <img src="img/present-2.jpeg" alt="present car 2">
+            </div>
+            <div class="grid-item present other" data-category="present other">
+                <img src="img/present-4.jpg" alt="present car 4">
+            </div>
+            <div class="grid-item future other" data-category="future other">
+                <img src="img/future-4.jpeg" alt="concept car 4">
+            </div>
+            <div class="grid-item present white" data-category="present white">
+                <img src="img/present-1.jpg" alt="present car 1">
+            </div>
+            <div class="grid-item old lack" data-category="old black">
+                <img src="img/old-2.jpg" alt="old car 2">
+            </div>
+            <div class="grid-item old gray" data-category="old gray">
+                <img src="img/old-4.jpg" alt="old car 4">
+            </div>
+            <div class="grid-item present gray" data-category="present gray">
+                <img src="img/present-3.jpg" alt="present car 3">
+            </div>
+            <div class="grid-item old other" data-category="old other">
+                <img src="img/old-1.jpg" alt="old car 1">
+            </div>
+            <div class="grid-item future other" data-category="future other">
+                <img src="img/future-2.jpg" alt="concept car 2">
+            </div>
+            <div class="grid-item old black" data-category="old black">
+                <img src="img/old-3.jpg" alt="old car 3">
+            </div>
+            <div class="grid-item future gray" data-category="future gray">
+                <img src="img/future-3.jpg" alt="concept car 3">
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

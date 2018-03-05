@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+.filters {
+    display: flex;
+    flex-direction: row;
+}
+.ui-group{
+    display: flex;
+    flex-direction: row;
+}
+.filters h3,
+.filter-button-group {
+    margin: 20px;
+}
+.grid{
+    position: relative;
+}
+.grid-item {
+    width: 20%; margin: 30px;
+}
+.grid-item img{
+    width: 100%;
+}
+.is-checked{
+    background: #494f54;
+    color: ghostwhite;
+}

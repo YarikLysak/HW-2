@@ -1,6 +1,7 @@
 const article = $('.article');
 const nav = $('.navigation');
 const topBtn = $('#myBtn');
+const toggleBtn = $('#toggleBtn');
 const nav_height = nav.outerHeight();
 
 window.onscroll = function() {scrollFunction()};
@@ -16,7 +17,7 @@ function scrollFunction() {
 
     //active article
     article.each(function() {
-        const top = $(this).offset().top - nav_height - 40;
+        const top = $(this).offset().top - nav_height - 300;
         const bottom = top + $(this).outerHeight();
 
         if (cur_pos >= top && cur_pos <= bottom) {
@@ -29,6 +30,9 @@ function scrollFunction() {
     });
 }
 
+toggleBtn.click(()=> {
+    $('.navigation-ul').toggleClass('visible');
+});
 topBtn.click(() => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+h1{
+    color: var(--teal);
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.skill-form{
+    border: 2px solid var(--teal);
+    padding: 25px;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.form-control{
+    width: 80%;
+}
+.btn{
+    background: #000313;
+    color: white;
+}
+
+.error{
+    color: red;
+    text-align: center;
+    visibility: hidden;
+}
+.show-error{
+    visibility: visible;
+}
+.progress{
+    position: relative;
+    margin-bottom: 5px;
+    height: 2rem;
+}
+.progress-name{
+    position: absolute;
+    top:0;
+    left:1%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.bg-green{
+    background-color: var(--teal);
+}
+.grey-scales{
+    display: flex;
+    flex-direction: row;
+}
+.grey-scale{
+    height: 10px;
+    border-collapse: collapse;
+    border: 2px solid #ECECEC;
+    border-top: none;
+    border-right: none;
+
+}
+.grey-scale:last-child{
+    border-right: 2px solid #ECECEC;;
+}
+.grey-scale-proficient{
+    width: 25%;
+}
+.grey-scale-expert{
+    width: 50%;
+}
+.grey-scale-master{
+    width: 25%;
+}
+.ranges{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.proficient-range{
+    margin-left: 16%;
+}
+.expert-range{
+    margin-left: 45%;
+}
+.master-range {
+    margin-left: 19%;
+}

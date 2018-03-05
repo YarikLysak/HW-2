@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous"/>
+        <link rel="stylesheet" href="main.css">
+
+        <title>task-2</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Skills</h1>
+            <div class="skill-form mb-3">
+                <form>
+                    <div class="form-group">
+                        <label for="skill-name">Skill name:</label>
+                        <input type="text" class="form-control" id="skill-name" maxlength=100 placeholder="Enter skill name">
+                    </div>
+                    <p class="error" id="wrongNameError">short name entered</p>
+                    <div class="form-group">
+                        <label for="skill-range">Skill range:</label>
+                        <input type="text" class="form-control" id="skill-range" maxlength=3 placeholder="Enter skill range">
+                    </div>
+                    <p class="error" id="wrongNumberError" >you entered wrong number</p>
+                    <button type="submit" class="btn" id="add-skill-btn">Add skill</button>
+
+                </form>
+            </div>
+            <div class="skill-output" id="skill-output">
+                <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 30%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-name">HTML</div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-green" role="progressbar" style="width: 30%" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-name">CSS</div>
+                </div>
+            </div>
+            <div class="grey-scale-place">
+                <div class="grey-scales">
+                    <div class="grey-scale grey-scale-proficient"></div>
+                    <div class="grey-scale grey-scale-expert"></div>
+                    <div class="grey-scale grey-scale-master"></div>
+                </div>
+                <div class="ranges">
+                    <div class="range beginner-range">Beginner</div>
+                    <div class="range proficient-range">Proficient</div>
+                    <div class="range expert-range">Expert</div>
+                    <div class="range master-range">Master</div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
